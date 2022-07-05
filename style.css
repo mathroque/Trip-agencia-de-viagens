@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    background: linear-gradient(360deg, rgba(0, 145, 255, 0.205) 50%, rgb(255, 255, 255) 100%), url(images/capa-inicio.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* ----CABEÇALHO---- */
+
+.navbar {
+    margin: 0 30px;
+}
+
+#logo{
+    width: 100px;
+}
+
+#mynav ul li a {
+    margin-left: 70px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+#mynav ul li a:hover {
+    color: #007bff;
+}
+
+/* ----FIM CABEÇALHO---- */
+
+/* ----MAIN---- */
+
+.banner {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: rgb(95, 95, 95);
+    background: rgba(255, 255, 255, 0.178);
+}
+
+.banner h1 {
+    font-size: 3.5rem;
+}
+
+.banner p {
+    font-size: 1.2rem;
+}
+
+.brand-color {
+    color: #007bff;
+    font-size: 1.2rem;
+}
+
+#carouselExampleControls {
+    margin: 40px auto;
+    max-width: 1500px;
+}
+
+.img-configs {
+    max-height: 350px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.img-configs:hover {
+    opacity: 80%;
+}
+
+.seta-cor {
+    color: #007bff;
+    font-size: 3rem;
+}
+
+#conteudo {
+    background: rgba(99, 99, 99, 0.856);
+    padding-top: 30px;
+}
+
+.width-1284 {
+    max-width: 1284px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.barra-busca {
+    background-color: #ffffffe3;
+    max-height: 100px;
+    color: rgb(71, 71, 71);
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+input {
+    padding: 8px;
+    color: rgb(80, 80, 80);
+    background: rgb(255, 255, 255);
+    border: none;
+}
+
+.barra-busca i {
+    padding: 0 5px;
+}
+
+.infos {
+    background: #424242;
+    max-width: 45%;
+    min-width: 245px;
+    padding: 20px 20px 10px 20px;
+    margin: 40px 0;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.infos img {
+    max-height: 175px;
+    max-width: 300px;
+}
+
+.infos-text {
+    max-width: 40%;
+}
+
+.infos-text h2 {
+    font-size: 1.3rem;
+}
+
+.infos-text p {
+    text-align: justify;
+    font-size: 0.9rem;
+}
+
+.btn-plus {
+    color: white;
+    background: #007bff;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-plus:hover {
+    background: #1d5897;
+    color: white;
+}
+
+.btn-plus:active {
+    background: #18304b;
+    color: white;
+}
+
+/* ----FIM MAIN---- */
+
+/* ----FOOTER---- */
+
+footer {
+    background: #353535f6;
+    text-align: center;
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.empresa {
+    display: flex;
+    gap: 20px;
+    text-align: left;
+    align-items: center;
+}
+
+.empresa img {
+    max-width: 100px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    color: grey;
+    text-decoration: none;
+}
+
+.links a {
+    color: grey;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.links a:hover {
+    color: #007bff;
+}
+
+.linkedin, .github {
+    font-size: 1.5rem;
+    color: #007bff;
+    transition: all 0.5s;
+}
+
+.linkedin:hover {
+    color: #0077b5;
+}
+
+.github:hover {
+    color: #171515;
+}
+
+.redes {
+    color: white;
+    text-align: center;
+    padding-left: 100px;
+}
+
+.redes a i {
+    font-size: 1.5rem;
+    margin: 3px;
+    color: darkgray;
+    transition: all 0.5s;
+}
+
+.facebook:hover {
+    color: #1877f2;
+}
+
+.instagram:hover {
+    color: #dd2a7b;
+}
+
+.twitter:hover {
+    color: #00acee;
+}
+
+/* ----FIM FOOTER---- */
+
+
+
+
+
+
+
+@media (max-width: 575.98px) {
+
+    /* ----CABEÇALHO---- */
+
+    .navbar {
+        margin: 0 5px;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+
+    #logo {
+        width: 70px;
+    }
+
+    #mynav ul li a {
+        margin-left: 0;
+    }
+
+    /* ----FIM CABEÇALHO---- */
+
+    /* ----MAIN---- */
+
+    main section {
+        flex-direction: column;
+    }
+
+    .banner {
+        min-height: 460px;
+    }
+
+    .banner h1 {
+        font-size: 2.5rem;
+    }
+
+    #carouselExampleControls {
+        margin: 0 0 30px 0;
+    }
+
+    .img-configs {
+        max-width: 100%;
+    }
+
+    .width-1284 {
+        margin: 0;
+        gap: 0;
+    }
+
+    .barra-busca {
+        border-radius: 5px;
+        width: 100%;
+        max-height: fit-content;
+        padding: 10px;
+        display: flex;
+    }
+
+    .barra-busca a {
+        margin-top: 10px;
+        border-radius: 20px;
+        /* margin: 10px auto 0 auto; */
+    }
+
+    .infos {
+        max-width: 100%;
+        margin: 15px 0 0 0;
+        padding: 10px 0 10px 0;
+    }
+
+    .infos img {
+        max-width: 100%;
+    }
+
+    .infos-text {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    /* ----FIM MAIN---- */
+
+    footer {
+        margin-top: 15px;
+        padding: 20px;
+    }
+
+    .empresa {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .redes {
+        padding: 0;
+    }
+}
