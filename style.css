@@ -11,6 +11,7 @@ body {
     background-attachment: fixed;
 }
 
+
 /* ----CABEÇALHO---- */
 
 .navbar {
@@ -81,6 +82,10 @@ body {
     padding-top: 30px;
 }
 
+#conteudo-contato {
+    color: white;
+}
+
 .width-1284 {
     max-width: 1284px;
     margin: 0 auto;
@@ -89,6 +94,72 @@ body {
     justify-content: center;
     gap: 20px;
 }
+
+/*---PÁGINA PROMOÇÃO---*/
+
+#promo-header {
+    color: rgb(95, 95, 95);
+    text-align: left;
+    width: 100%;
+    display: flex;
+    padding-top: 10px;
+}
+
+.promo-icon {
+    color: tomato;
+}
+
+.promo-header-text {
+    padding-left: 10px;
+}
+
+.promo-header-text p {
+    font-size: 1.1rem;
+    color: tomato;
+}
+
+#promo-body {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.continente {
+    background: rgba(245, 243, 243, 0.938);
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    margin: 20px 0;
+    box-shadow: 1px 1px 10px;
+}
+
+.continente a {
+    text-decoration: none;
+}
+
+.continente h4 {
+    margin: 0;
+    color: #007bff;
+    transition: all 0.3s;
+}
+
+.continente h4:hover {
+    color: tomato;
+    text-shadow: 1px 1px 20px rgb(175, 175, 175);
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+}
+
+.bg-tomato {
+    background: tomato;
+}
+
+/*---FIM PÁGINA PROMOÇÃO---*/
 
 .barra-busca {
     background-color: #ffffffe3;
@@ -110,12 +181,84 @@ input {
     padding: 0 5px;
 }
 
+#infos-contato {
+    display: grid;
+    grid-template-areas: 'faq suporte'
+                         'newsletter newsletter';
+    grid-template-columns: 2fr 1fr;
+    background: #424242;
+    margin: 40px 0;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.76);
+}
+
+#suporte {
+    grid-area: suporte;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-left: 1px solid rgba(128, 128, 128, 0.288);
+    text-align: right;
+}
+
+#suporte h4, #faq h4 {
+    font-size: 2rem;
+}
+
+#suporte span {
+   font-size: 1.1rem;
+}
+
+#faq {
+    grid-area: faq;
+    padding: 20px;
+    border-right: 1px solid rgba(128, 128, 128, 0.295);
+    text-align: justify;
+}
+
+#faq ol li {
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+#newsletter {
+    grid-area: newsletter;
+    display: flex;
+    background: #007bff56;
+    overflow: hidden;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+#newsletter div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+#newsletter div input {
+    width: 50%;
+}
+
+#newsletter div input, #newsletter div button {
+    border-radius: 3px;
+    line-height: 40px;
+}
+
 .infos {
     background: #424242;
-    max-width: 45%;
+    max-width: 47%;
     min-width: 245px;
     padding: 20px 20px 10px 20px;
-    margin: 40px 0;
+    margin: 20px 0;
     text-align: center;
     color: rgb(255, 255, 255);
     border-radius: 10px;
@@ -141,6 +284,20 @@ input {
 .infos-text p {
     text-align: justify;
     font-size: 0.9rem;
+    margin: 0;
+}
+
+.infos-text ul {
+    text-align: left;
+    background: #007bff1f;
+    border-radius: 25px;
+    color: rgb(253, 253, 253);
+    box-shadow: 1px 1px 10px rgb(32, 32, 32);
+    margin: 5px;
+}
+
+.infos-text li {
+    padding: 5px;
 }
 
 .btn-plus {
@@ -150,6 +307,7 @@ input {
     text-decoration: none;
     font-weight: 600;
     transition: background 0.3s;
+    border: none;
 }
 
 .btn-plus:hover {
@@ -246,12 +404,7 @@ footer {
 /* ----FIM FOOTER---- */
 
 
-
-
-
-
-
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
 
     /* ----CABEÇALHO---- */
 
@@ -298,6 +451,7 @@ footer {
     .width-1284 {
         margin: 0;
         gap: 0;
+        padding-bottom: 15px;
     }
 
     .barra-busca {
@@ -315,7 +469,7 @@ footer {
     }
 
     .infos {
-        max-width: 100%;
+        min-width: 100%;
         margin: 15px 0 0 0;
         padding: 10px 0 10px 0;
     }
@@ -329,10 +483,44 @@ footer {
         padding: 10px;
     }
 
+    #infos-contato {
+        display: flex;
+    }
+
+    #newsletter div {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    #newsletter div i {
+        font-size: 3rem;
+    }
+
+    #newsletter div input {
+        width: auto;
+    }
+
+    /*---PÁGINA PROMOÇÃO---*/
+
+    #promo-header {
+        flex-direction: row;
+        padding: 5px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 10px auto;
+    }
+
+    /*---FIM PÁGINA PROMOÇÃO---*/
+
     /* ----FIM MAIN---- */
 
     footer {
-        margin-top: 15px;
         padding: 20px;
     }
 
