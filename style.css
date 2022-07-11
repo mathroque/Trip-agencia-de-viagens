@@ -155,6 +155,16 @@ body {
     padding: 15px 0;
 }
 
+.card {
+    max-width: 20%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .bg-tomato {
     background: tomato;
 }
@@ -332,6 +342,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: auto;
 }
 
 .empresa {
@@ -402,6 +413,10 @@ footer {
 }
 
 /* ----FIM FOOTER---- */
+
+
+
+
 
 
 @media (max-width: 991.98px) {
@@ -514,6 +529,7 @@ footer {
 
     .card {
         margin: 10px auto;
+        max-width: 90%;
     }
 
     /*---FIM PÁGINA PROMOÇÃO---*/
