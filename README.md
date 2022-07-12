@@ -1,4 +1,4 @@
-# Trip-agencia-de-viagens
+# Trip | Agência de viagens
 Este website simula uma agência de viagens fictícia criada por mim. Também trata-se de um projeto avaliativo individual proposto pelo programa Recode Pro, com foco na formação de desenvolvedores web full stack.
 
 ### Tela inicial
