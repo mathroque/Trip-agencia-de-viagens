@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 14px;
 }
 
 body {
-    background: linear-gradient(360deg, rgba(0, 145, 255, 0.205) 50%, rgb(255, 255, 255) 100%), url(images/capa-inicio.jpg) no-repeat;
+    background: linear-gradient(360deg, rgba(0, 145, 255, 0.205) 50%, rgb(255, 255, 255) 100%),
+        url(images/capa-inicio.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
-
 
 /* ----CABEÇALHO---- */
 
@@ -18,12 +18,15 @@ body {
     margin: 0 30px;
 }
 
-#logo{
+#logo {
     width: 100px;
 }
 
+#mynav ul li {
+    margin-left: 30px;
+}
+
 #mynav ul li a {
-    margin-left: 70px;
     font-weight: bold;
     transition: all 0.5s;
 }
@@ -31,6 +34,60 @@ body {
 #mynav ul li a:hover {
     color: #007bff;
 }
+
+#mynav ul li:nth-child(5) {
+    background: #007bff;
+    border-radius: 3px;
+    transition: all 0.3s ease-in;
+    box-shadow: 1px 1px 5px rgb(63, 63, 63);
+}
+
+#mynav ul li:nth-child(5):hover {
+    background: #105cad;
+}
+
+#mynav ul li:nth-child(5) a {
+    color: white;
+    padding: 7px 12px;
+}
+
+/* ----MODAL---- */
+
+.modal-content {
+    background: #ffffff !important;
+}
+
+#modal-header {
+    display: flex;
+}
+
+.email-box,
+.password-box {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.email-box label,
+.password-box label {
+    padding: 10px 0;
+    font-weight: 600;
+}
+
+.email-box input,
+.password-box input {
+    padding: 10px;
+    border-radius: 3px;
+    outline: 2px solid;
+}
+
+#modal-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* ----FIM MODAL---- */
 
 /* ----FIM CABEÇALHO---- */
 
@@ -80,6 +137,30 @@ body {
 #conteudo {
     background: rgba(99, 99, 99, 0.856);
     padding-top: 30px;
+}
+
+.barra-busca {
+    background-color: #ffffffe3;
+    max-height: 100px;
+    color: rgb(71, 71, 71);
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.barra-busca input {
+    border-radius: 3px;
+}
+
+input {
+    padding: 8px;
+    color: rgb(80, 80, 80);
+    background: rgb(255, 255, 255);
+    border: none;
+}
+
+.barra-busca i {
+    padding: 0 5px;
 }
 
 #conteudo-contato {
@@ -171,30 +252,11 @@ body {
 
 /*---FIM PÁGINA PROMOÇÃO---*/
 
-.barra-busca {
-    background-color: #ffffffe3;
-    max-height: 100px;
-    color: rgb(71, 71, 71);
-    text-align: center;
-    border-radius: 5px;
-    padding: 10px;
-}
-
-input {
-    padding: 8px;
-    color: rgb(80, 80, 80);
-    background: rgb(255, 255, 255);
-    border: none;
-}
-
-.barra-busca i {
-    padding: 0 5px;
-}
-
 #infos-contato {
     display: grid;
-    grid-template-areas: 'faq suporte'
-                         'newsletter newsletter';
+    grid-template-areas:
+        "faq suporte"
+        "newsletter newsletter";
     grid-template-columns: 2fr 1fr;
     background: #424242;
     margin: 40px 0 85px 0;
@@ -213,12 +275,13 @@ input {
     text-align: right;
 }
 
-#suporte h4, #faq h4 {
+#suporte h4,
+#faq h4 {
     font-size: 2rem;
 }
 
 #suporte span {
-   font-size: 1.1rem;
+    font-size: 1.1rem;
 }
 
 #faq {
@@ -258,7 +321,8 @@ input {
     width: 50%;
 }
 
-#newsletter div input, #newsletter div button {
+#newsletter div input,
+#newsletter div button {
     border-radius: 3px;
     line-height: 40px;
 }
@@ -316,8 +380,9 @@ input {
     padding: 8px 20px;
     text-decoration: none;
     font-weight: 600;
-    transition: background 0.3s;
+    transition: all 0.3s ease-in;
     border: none;
+    border-radius: 3px;
 }
 
 .btn-plus:hover {
@@ -329,6 +394,69 @@ input {
     background: #18304b;
     color: white;
 }
+
+.btn-shy {
+    color: white;
+    background: #353535f6;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease-in;
+    border: none;
+    border-radius: 3px;
+}
+
+.btn-shy:hover {
+    background: #161616f6;
+    color: white;
+}
+
+.btn-shy:active {
+    background: #000000f6;
+    color: white;
+}
+
+/* ----PÁGINA CADASTRO---- */
+
+#cadastro-container {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 60px 40px;
+    margin: 80px 0 120px 0;
+    color: rgb(95, 95, 95);
+    max-width: 40%;
+    box-shadow: 1px 1px 15px rgb(36, 36, 36);
+}
+
+#cadastro-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#cadastro-form label {
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+#cadastro-form div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.input-pairs input {
+    outline: 2px solid grey;
+}
+
+#cadastro-form input {
+    border-radius: 3px;
+}
+
+.btn-cadastro {
+    margin: 40px auto 0 auto;
+}
+
+/* ----FIM PÁGINA CADASTRO---- */
 
 /* ----FIM MAIN---- */
 
@@ -373,7 +501,8 @@ footer {
     color: #007bff;
 }
 
-.linkedin, .github {
+.linkedin,
+.github {
     font-size: 1.5rem;
     color: #007bff;
     transition: all 0.5s;
@@ -415,28 +544,45 @@ footer {
 /* ----FIM FOOTER---- */
 
 
-
-
+/* -------------------- MOBILE -------------------- */
 
 
 @media (max-width: 991.98px) {
-
     /* ----CABEÇALHO---- */
 
     .navbar {
-        margin: 0 5px;
+        margin: 0 10px;
     }
 
     .navbar-toggler {
+        width: 70px;
+        height: 50px;
+    }
+
+    #navbar-toggler-mods {
         border: none;
     }
 
-    #logo {
-        width: 70px;
+    #navbar-toggler-icon-mods {
+        width: 2.5rem;
+        height: 2.5rem;
     }
 
-    #mynav ul li a {
+    #logo {
+        width: 100px;
+    }
+
+    #mynav ul li {
         margin-left: 0;
+    }
+
+    #mynav ul li:nth-child(5) {
+        max-width: 90px;
+        margin: 10px 0;
+    }
+
+    #mynav ul li:nth-child(5) a {
+        text-align: center;
     }
 
     /* ----FIM CABEÇALHO---- */
@@ -449,6 +595,7 @@ footer {
 
     .banner {
         min-height: 460px;
+        padding: 10px;
     }
 
     .banner h1 {
@@ -470,17 +617,20 @@ footer {
     }
 
     .barra-busca {
-        border-radius: 5px;
+        border-radius: 3px;
         width: 100%;
         max-height: fit-content;
         padding: 10px;
         display: flex;
     }
 
-    .barra-busca a {
+    .barra-busca form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .barra-busca button {
         margin-top: 10px;
-        border-radius: 20px;
-        /* margin: 10px auto 0 auto; */
     }
 
     .infos {
@@ -533,6 +683,16 @@ footer {
     }
 
     /*---FIM PÁGINA PROMOÇÃO---*/
+
+    /*---PÁGINA CADASTRO---*/
+
+    #cadastro-container {
+        max-width: fit-content;
+        padding: 15px;
+        margin: 30px 0;
+    }
+
+    /*--- FIM PÁGINA CADASTRO---*/
 
     /* ----FIM MAIN---- */
 

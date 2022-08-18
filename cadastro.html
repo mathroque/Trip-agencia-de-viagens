@@ -7,7 +7,7 @@
             name="viewport"
             content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
         />
-        <title>Trip | Página Inicial</title>
+        <title>Trip | Cadastre-se</title>
         <link
             rel="shortcut icon"
             href="images/faviconlogo.png"
@@ -20,8 +20,7 @@
             integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
             crossorigin="anonymous"
         />
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
             crossorigin="anonymous"
         ></script>
@@ -169,141 +168,27 @@
             </header>
 
             <main>
-                <section class="d-flex flex-column">
-                    <section class="banner">
-                        <h1>Os melhores destinos nacionais!</h1>
-                        <p>
-                            Na <b class="brand-color">Trip</b> você encontra uma
-                            grande variadade de destinos com os melhores preços.
-                            Confira abaixo!
-                        </p>
-                        <!--Carrossel-->
-                        <div
-                            id="carouselExampleControls"
-                            class="carousel slide"
-                            data-bs-ride="carousel"
-                        >
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <a href="destino.html"
-                                        ><img
-                                            src="images/carousel/foz.webp"
-                                            class="img-configs"
-                                            alt="..."
-                                    /></a>
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="destino.html"
-                                        ><img
-                                            src="images/carousel/fervedouro-tocantins-brazil.webp"
-                                            class="img-configs"
-                                            alt="..."
-                                    /></a>
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="destino.html"
-                                        ><img
-                                            src="images/carousel/veadeiros.jpg"
-                                            class="img-configs"
-                                            alt="..."
-                                    /></a>
-                                </div>
+                <div class="width-1284">
+                    <section id="cadastro-container">
+                        <h1>Realize seu cadastro: </h1>
+                        <p>É seu primeiro acesso na <span class="brand-color">Trip</span>? Inscreva-se em nosso site para ter acesso a todas funcionalidades.</p>
+                        <form id="cadastro-form">
+                            <div class="input-pairs">
+                                <label for="cadastro-nome">Nome completo: </label>
+                                <input type="text" id="cadastro-nome" required>
                             </div>
-                            <button
-                                class="carousel-control-prev"
-                                type="button"
-                                data-bs-target="#carouselExampleControls"
-                                data-bs-slide="prev"
-                            >
-                                <i
-                                    class="fa-solid fa-angle-left seta-cor"
-                                    aria-hidden="true"
-                                ></i>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button
-                                class="carousel-control-next"
-                                type="button"
-                                data-bs-target="#carouselExampleControls"
-                                data-bs-slide="next"
-                            >
-                                <i
-                                    class="fa-solid fa-angle-right seta-cor"
-                                    aria-hidden="true"
-                                ></i>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        <!--Fim Carrossel-->
+                            <div class="input-pairs">
+                                <label for="cadastro-email">E-mail:</label>
+                                <input type="email" name="email" id="cadastro-email" required>
+                            </div>
+                            <div class="input-pairs">
+                                <label for="senha">Senha: </label>
+                                <input type="password" name="senha" id="senha" minlength="8" required>
+                            </div>
+                            <input type="submit" value="Cadastrar" class="btn-shy btn-cadastro">
+                        </form>
                     </section>
-
-                    <section id="conteudo">
-                        <div class="width-1284">
-                            <section class="barra-busca">
-                                <form >
-                                    <h5>Para onde você deseja ir?</h5>
-                                    <input
-                                        type="text"
-                                        name=""
-                                        id="origem"
-                                        placeholder="Origem"
-                                    />
-                                    <i class="fa-solid fa-plane"></i>
-                                    <input
-                                        type="text"
-                                        name=""
-                                        id="destino"
-                                        placeholder="Destino"
-                                    />
-                                    <label for="data-ida">Ida:</label>
-                                    <input type="date" name="" id="data-ida" />
-                                    <label for="data-volta">Volta:</label>
-                                    <input
-                                        type="date"
-                                        name=""
-                                        id="data-volta"
-                                    />
-                                    <button
-                                        type="submit"
-                                        class="btn-plus"
-                                        href="destino.html"
-                                    >
-                                        Buscar
-                                    </button>
-                                </form>
-                            </section>
-
-                            <section class="infos">
-                                <img src="images/italia.jpg" />
-                                <div class="infos-text">
-                                    <h2>Destinos na Europa!</h2>
-                                    <p>
-                                        Você encontra os mais variados destinos
-                                        do continente europeu aqui na Trip.
-                                        Trabalhamos também com a possibilidade
-                                        de um pacote "mochilão" para o viajante
-                                        que desejar conhecer mais de um país.
-                                    </p>
-                                </div>
-                            </section>
-                            <section class="infos">
-                                <img src="images/edimburgo.webp" />
-                                <div class="infos-text">
-                                    <h2>Opções de parcelamento:</h2>
-                                    <p>
-                                        Nós da Trip aceitamos diversas formas de
-                                        pagamento, como dinheiro, cartão de
-                                        débito, cartão de crédito, pix e,
-                                        inclusive, parcelamento por boleto
-                                        bancário. Nos importamos em oferecer
-                                        escolhas que melhor se adequem às
-                                        necessidades de nossos clientes.
-                                    </p>
-                                </div>
-                            </section>
-                        </div>
-                    </section>
-                </section>
+                </div>             
             </main>
 
             <footer>
